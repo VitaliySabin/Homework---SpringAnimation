@@ -13,6 +13,7 @@
 		687AC4802A029D45000110FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687AC47E2A029D45000110FF /* Main.storyboard */; };
 		687AC4822A029D48000110FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 687AC4812A029D48000110FF /* Assets.xcassets */; };
 		687AC4852A029D48000110FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687AC4832A029D48000110FF /* LaunchScreen.storyboard */; };
+		687AC4932A029F96000110FF /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 687AC4922A029F96000110FF /* SpringAnimation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				687AC4932A029F96000110FF /* SpringAnimation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +125,9 @@
 			dependencies = (
 			);
 			name = "Homework - SpringAnimation";
+			packageProductDependencies = (
+				687AC4922A029F96000110FF /* SpringAnimation */,
+			);
 			productName = "Homework - SpringAnimation";
 			productReference = 687AC4752A029D45000110FF /* Homework - SpringAnimation.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +156,9 @@
 				Base,
 			);
 			mainGroup = 687AC46C2A029D45000110FF;
+			packageReferences = (
+				687AC4912A029F96000110FF /* XCRemoteSwiftPackageReference "SpringAnimation" */,
+			);
 			productRefGroup = 687AC4762A029D45000110FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -334,7 +342,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -365,7 +373,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -404,6 +412,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		687AC4912A029F96000110FF /* XCRemoteSwiftPackageReference "SpringAnimation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LexDeBash/SpringAnimation.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		687AC4922A029F96000110FF /* SpringAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 687AC4912A029F96000110FF /* XCRemoteSwiftPackageReference "SpringAnimation" */;
+			productName = SpringAnimation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 687AC46D2A029D45000110FF /* Project object */;
 }
