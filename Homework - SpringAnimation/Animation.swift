@@ -6,26 +6,44 @@
 //
 
 struct Animation {
-    let preset: [String]
-    let curve: [String]
+    let preset: String
+    let curve: String
     
     let force: Double
     let duration: Double
     let delay: Double
     
-    static func getAnimation() -> Animation {
-        let animationPreset = AnimationStore.shared.animationPreset.shuffled()
-        let animationCurve = AnimationStore.shared.animationCurve.shuffled()
-        let force = Double.random(in: 0.5...1.5)
-        let duration = Double.random(in: 0.5...1.5)
-        let delay = Double.random(in: 0.5...1)
+    var description: String {
+        """
+preset: \(preset)
+curve: \(curve)
+force: \(String(format:"%.2f", force))
+duration: \(String(format:"%.2f", duration))
+delay: \(String(format:"%.2f", delay))
+"""
+    }
+    
+    static func getAnimations() -> [Animation] {
+        let animationStore = AnimationStore.shared
         
-        return Animation(
-            preset: animationPreset,
-            curve: animationCurve,
-            force: force,
-            duration: duration,
-            delay: delay
-        )
+        let animationPresets = animationStore.animationPreset.shuffled()
+        let animationCurves = animationStore.animationCurve.shuffled()
+        
+        var animations: [Animation] = []
+        
+        let iterationCount = min(animationPresets.count, animationCurves.count)
+        
+        for index in 0...iterationCount - 1 {
+            let animation = Animation(
+                preset: animationPresets[index],
+                curve: animationCurves[index],
+                force: Double.random(in: 0.5...1.5),
+                duration: Double.random(in: 0.5...1.5),
+                delay: Double.random(in: 0.5...1)
+            )
+            
+            animations.append(animation)
+        }
+        return animations
     }
 }
