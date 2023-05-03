@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IiD-iT-xkT">
-                                <rect key="frame" x="50" y="36" width="220" height="200"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IiD-iT-xkT" customClass="SpringView" customModule="SpringAnimation">
+                                <rect key="frame" x="50" y="40" width="220" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpl-ix-RZa">
                                         <rect key="frame" x="8" y="8" width="204" height="184"/>
@@ -35,6 +35,11 @@
                                     <constraint firstAttribute="width" secondItem="IiD-iT-xkT" secondAttribute="height" multiplier="11:10" id="T73-OK-I9U"/>
                                     <constraint firstAttribute="bottom" secondItem="mpl-ix-RZa" secondAttribute="bottom" constant="8" id="nkg-TW-oGY"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smL-A4-EO1">
                                 <rect key="frame" x="50" y="397" width="220" height="40"/>
@@ -42,7 +47,7 @@
                                     <constraint firstAttribute="width" secondItem="smL-A4-EO1" secondAttribute="height" multiplier="11:2" id="MYc-hs-e9z"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Start Animation">
+                                <buttonConfiguration key="configuration" style="filled" title="Start Animation" cornerStyle="large">
                                     <color key="baseBackgroundColor" systemColor="systemPinkColor"/>
                                 </buttonConfiguration>
                             </button>
@@ -55,7 +60,7 @@
                             <constraint firstItem="IiD-iT-xkT" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="55:142" id="SQc-Pu-NkT"/>
                             <constraint firstItem="IiD-iT-xkT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zsj-4P-mDh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="smL-A4-EO1" secondAttribute="bottom" multiplier="1.3" id="lT5-47-UDR"/>
-                            <constraint firstItem="IiD-iT-xkT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="nkh-bP-hzl"/>
+                            <constraint firstItem="IiD-iT-xkT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" multiplier="2" id="nkh-bP-hzl"/>
                         </constraints>
                     </view>
                 </viewController>
