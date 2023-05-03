@@ -56,15 +56,55 @@
 		687AC4772A029D45000110FF /* Homework - SpringAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				687AC4782A029D45000110FF /* AppDelegate.swift */,
-				687AC47A2A029D45000110FF /* SceneDelegate.swift */,
-				687AC47C2A029D45000110FF /* ViewController.swift */,
-				687AC47E2A029D45000110FF /* Main.storyboard */,
+				687AC48D2A029D9E000110FF /* Apps */,
+				687AC4902A029E1D000110FF /* DataStore */,
+				687AC48F2A029DEA000110FF /* Model */,
+				687AC48E2A029DD9000110FF /* ViewControllers */,
+				687AC48C2A029D89000110FF /* Storyboards */,
 				687AC4812A029D48000110FF /* Assets.xcassets */,
-				687AC4832A029D48000110FF /* LaunchScreen.storyboard */,
-				687AC4862A029D48000110FF /* Info.plist */,
 			);
 			path = "Homework - SpringAnimation";
+			sourceTree = "<group>";
+		};
+		687AC48C2A029D89000110FF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				687AC47E2A029D45000110FF /* Main.storyboard */,
+				687AC4832A029D48000110FF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		687AC48D2A029D9E000110FF /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				687AC4782A029D45000110FF /* AppDelegate.swift */,
+				687AC47A2A029D45000110FF /* SceneDelegate.swift */,
+				687AC4862A029D48000110FF /* Info.plist */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		687AC48E2A029DD9000110FF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				687AC47C2A029D45000110FF /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		687AC48F2A029DEA000110FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		687AC4902A029E1D000110FF /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataStore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,12 +328,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Homework - SpringAnimation/Info.plist";
+				INFOPLIST_FILE = "Homework - SpringAnimation/Apps/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,9 +342,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Vitaliy-Sabin.Homework---SpringAnimation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,12 +359,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Homework - SpringAnimation/Info.plist";
+				INFOPLIST_FILE = "Homework - SpringAnimation/Apps/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +373,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Vitaliy-Sabin.Homework---SpringAnimation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
