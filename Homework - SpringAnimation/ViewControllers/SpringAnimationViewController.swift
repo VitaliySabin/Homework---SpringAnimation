@@ -12,7 +12,7 @@ final class SpringAnimationViewController: UIViewController {
     
     @IBOutlet var animationView: SpringView!
     @IBOutlet var animationLabel: UILabel!
-    @IBOutlet var runButton: SpringButton!
+    @IBOutlet var runButton: UIButton!
     
     private var currentAnimation = Animation.getAnimation()
     
